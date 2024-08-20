@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+body {
+    background: url(https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148623068.jpg?semt=ais_hybrid);
+    height: 100vh;
+    /* width :100%; */
+    background-size: cover;
+}   
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-box {
+    border: 3px solid white;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: white;
+    margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+    display: flex;
+    justify-content: center; /* 버튼들을 가운데 정렬 */
+    gap: 15px; /*버튼들 사이에 10px 간격*/
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons .btn {
+    flex-grow: 1; /* 버튼들이 균등하게 공간을 차지하도록 함 */
+    padding: 10px 15px;
+    text-align: center;
 }
